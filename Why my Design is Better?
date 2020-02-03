@@ -1,0 +1,13 @@
+Why my Design is Better?
+I have tried to accomodate the following principles:
+
+Don't Repeat Yourself (DRY) Principle
+Keep It Simple and Stupid (KISS) Principle
+The Single Responsibility Principle (SRP)
+The Open/Closed Principle
+Liskov Substitution Principle (LSP)
+The Interface Segregation Principle (ISP)
+The Dependency Inversion Principle (DIP)
+The Composition Over Inheritance Principle
+
+Moreover SOLID principles are stricly followed and use of enum instead of using some magic numbers.
