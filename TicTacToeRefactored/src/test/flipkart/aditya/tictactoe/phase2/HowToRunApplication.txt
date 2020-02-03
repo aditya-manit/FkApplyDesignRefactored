@@ -1,0 +1,16 @@
+Deploying an Application via a JAR file
+
+
+To deploy the application, you have to pack (i.e., jar) all classes and resources into a single file, with a manifest that specifies the main class (containing the entry main() method).
+For example:
+via the Eclipse's "Export" option: Right-click on the project ⇒ Export ⇒ Java ⇒ JAR file ⇒ Next ⇒ Specify the JAR filename ⇒ Next ⇒ Next ⇒ Select "Generate the manifest file" ⇒ Browse to select the main class "GameMain" ⇒ Finish.
+via the "jar" command.
+First, create a manifest file called "tictactoe.mf", as follow:
+Manifest-Version: 1.0
+Main-Class: GameMain
+Next, issue a "jar" command (form CMD shell) where options 'c' for create, 'm' for manifest, 'f' for output jar filename, and 'v' for verbose:
+> jar cmfv tictactoe.mf tictactoe.jar *.class
+You can run the program from a JAR file directly (without unpacking the JAR file) by:
+In Windows' Explorer, right-click on the JAR file ⇒ Open with ⇒ Java Platform SE Binary; or
+From the CMD shell, run java.exe with -jar option, i.e., "java -jar JarFileName.jar".
+Note: JAR file uses the ZIP algorithm. In other words, you could use WinZIP/WinRAR to open and extract the contents of a JAR file.
