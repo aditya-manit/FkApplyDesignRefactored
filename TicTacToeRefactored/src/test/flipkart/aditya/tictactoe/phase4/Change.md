@@ -9,7 +9,7 @@ Modify the mouseClicked() event-handler to position the seed at the "bottom" row
 
 
 
-``~~`if (colSelected >= 0 && colSelected < COLS) {
+**`if (colSelected >= 0 && colSelected < COLS) {
    // Look for an empty cell starting from the bottom row
    for (int row = ROWS -1; row >= 0; row--) {
       if (board[row][colSelected] == Seed.EMPTY) {
@@ -20,7 +20,7 @@ Modify the mouseClicked() event-handler to position the seed at the "bottom" row
          break;
       }
    }
-}`~~``
+}`**
 
 
 Modify the hasWon() method to check for 4-in-a-line (along row, column, diagonal or opposite-diagonal).
